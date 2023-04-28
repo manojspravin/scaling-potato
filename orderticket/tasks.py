@@ -27,9 +27,11 @@ from orderticket.views import hello_equity
 #hello_equity(repeat=2,repeat_until=None)
 
 def equity(connection_check):
+    
+    print("Equity Starting")
 
     startTime = datetime.combine(datetime.now(timezone('Asia/Kolkata')), time(8,59)).time()
-    market_stop_time = datetime.combine(datetime.now(timezone('Asia/Kolkata')), time(18,1)).time()
+    market_stop_time = datetime.combine(datetime.now(timezone('Asia/Kolkata')), time(22,1)).time()
     nowTime = datetime.now(timezone('Asia/Kolkata')).time()
 
     if nowTime < startTime:
