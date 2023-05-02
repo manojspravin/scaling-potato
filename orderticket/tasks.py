@@ -549,10 +549,11 @@ def equity(connection_check):
                                     putone.save()
                             except Exception as ex:
                                 print(ex)
-
+                    
                     except Exception as equityException:
                         print(f"Exception for {e.symbol} with {equityException}")
                         continue
+                    te.sleep(0.05)
 
             connection_check = 'end'
 
